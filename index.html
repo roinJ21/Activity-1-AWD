@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiron Ramelo - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="https://files.catbox.moe/kg07ow.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+
+    <header>
+        <h1>Building a Dynamic Web Page Using HTML, CSS, and JavaScript</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="profile-section">
+        <div class="profile-image-wrapper">
+            <div class="glow-ring"></div>
+            <img src="https://files.catbox.moe/pq5cji.jpg" alt="Profile Picture" class="profile-image">
+        </div>
+        <h2 class="profile-name">
+            <span>Jiron Ramelo</span>
+            <span class="verified-badge">
+                <svg viewBox="0 0 40 40" fill="none">
+                    <circle cx="20" cy="20" r="20" fill="#1877F2"></circle>
+                    <path d="M7.03 20L15.85 28.82L32.97 11.7" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+                </svg>
+            </span>
+        </h2>
+        <p class="profile-subtitle">About Me</p>
+        <p>I am a BSIT student with a passion for blending the visual and the technical. My interests lie at the intersection of UI/UX Design, where I enjoy crafting intuitive digital experiences, and Computer Hardware, where I love "tinkering" with components to understand how they power our world. When I'm not behind a screen or a motherboard, you’ll likely find me exploring on my bike, discovering new music, or fueling my day with a good cup of coffee.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>From interactive UI/UX prototypes to fully functional, live websites—crafted to be responsive and visually engaging.</p>
+                <img src="https://files.catbox.moe/rxo4ql.jpg" alt="Web Design Image" class="gallery-img"> 
+            </div>
+            <div class="service">
+                <h3>Computer System Service</h3>
+                <p>Providing expert hardware repair, software installation, and system maintenance to keep your devices running at peak performance.</p>
+                <img src="https://files.catbox.moe/alphi3.jpg" alt="App Development Image" class="gallery-img">
+            </div>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Expert advice on tech strategies.</p>
+                <img src="https://files.catbox.moe/ipud5a.gif" alt="Consulting Image" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-message" style="color: red; display: none;">Please fill out all fields.</p>
+    </section>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <div class="footer">
+            <p class="footer-text">© 2026 | Developed by: Jiron Ramelo</p>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
